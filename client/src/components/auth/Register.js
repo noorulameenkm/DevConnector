@@ -22,7 +22,6 @@ const Register = ({ setAlert }) => {
     const onSubmit = e => {
         e.preventDefault();
         if(password !== password2){
-            console.log("Passwords do not match");
             setAlert('Passwords do not match', 'danger');
         } else {
             console.log(formData);
